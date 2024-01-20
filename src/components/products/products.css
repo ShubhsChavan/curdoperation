@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: row !important; 
+    margin: 100px;
+    flex-wrap: wrap;
+    
+}
+.item{
+    
+    width: 300px;
+    padding: 10px;
+    position: relative;
+    margin: 20px;
+    box-shadow: 8px 8px 8px #888888;;
+}
+.item img{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 6px;
+}
+.item h2{
+    margin-bottom: 10px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.edit{
+    padding: 10px 30px;
+    background-color: rgb(24, 155, 35);
+    border-radius: 15px;
+    color: white;
+    border: none;
+}
+.delete{
+    padding: 10px 30px;
+    background-color: rgb(218, 80, 17);
+    border-radius: 15px;
+    color: white;
+    border: none;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px 0px;
+}
+.pagination>span{
+    padding: 15px 20px ;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.paginationselected{
+    background-color: gray;
+}

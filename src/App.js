@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ToastNotification from './components/ToastNotification';
+import Products from './components/products/Products';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Editproduct from './components/edit/Editproduct';
 
 function App() {
+  // let { id } = useParams();
+  // const router= createBrowserRouter([
+  //   {path: "/", element: <Products/>, children:[
+  //     {path : 'editproduct/:id' , element : <Editproduct/>}
+  //   ]}
+  // ]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     
+    //  <RouterProvider router={router}>
+    //   <Products/>
+    //   <ToastNotification/>
+    //  </RouterProvider>
+    
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Products/>}></Route>
+        <Route path='/editproduct/:id' element={<Editproduct/>}></Route>
+      </Routes>
+      <ToastNotification/>
+    </BrowserRouter>
   );
 }
 

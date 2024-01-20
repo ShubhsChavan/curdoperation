@@ -1,0 +1,25 @@
+/* .container{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content:center ;
+    
+    padding: 20px;
+    width: 600px;
+    margin-left: 350px;
+}
+.form_group{
+    margin: 20px;
+
+}
+.form_group input{
+    padding: 10px;
+}
+.btn{
+    padding: 10px;
+    border-radius: 10px;
+}
+.form_group label{
+    color: white;
+    padding: 10px;
+} */
