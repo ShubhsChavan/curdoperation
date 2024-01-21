@@ -23,6 +23,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Products/>}></Route>
+        <Route path='/curdoperation' element={<Products/>}></Route>
         <Route path='/editproduct/:id' element={<Editproduct/>}></Route>
       </Routes>
       <ToastNotification/>
